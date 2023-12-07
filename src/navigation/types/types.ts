@@ -6,4 +6,5 @@ export type NativeStackParams = {
   insta_like_screen: undefined;
   color_picker_screen: undefined;
   home_screen: undefined;
+  circular_progress_bar: undefined;
 };
