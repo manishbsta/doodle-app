@@ -39,6 +39,10 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
             label="Circular Progress Bar"
             onPress={() => navigation.navigate("circular_progress_bar")}
           />
+          <DashboardTile
+            label="Segmented Controls"
+            onPress={() => navigation.navigate("segmented_controls")}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

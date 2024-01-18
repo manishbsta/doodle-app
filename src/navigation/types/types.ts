@@ -7,4 +7,5 @@ export type NativeStackParams = {
   color_picker_screen: undefined;
   home_screen: undefined;
   circular_progress_bar: undefined;
+  segmented_controls: undefined;
 };

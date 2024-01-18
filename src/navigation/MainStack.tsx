@@ -1,14 +1,15 @@
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import ChatHeadScreen from "../screens/chat_head/ChatHead";
+import CircularProgressBarScreen from "../screens/circular_progress_bar/CircularProgressBarScreen";
 import ColorPickerScreen from "../screens/color_picker/ColorPickerScreen";
+import HomeScreen from "../screens/home/HomeScreen";
 import InstaLikeScreen from "../screens/insta_like/InstaLikeScreen";
 import PinchKaisaScreen from "../screens/pinch_kaisa/PinchKaisaScreen";
 import ScrollingScreen from "../screens/scrolling_screen/ScrollingScreen";
+import SegmentedControlsScreen from "../screens/segmented_controls/SegmentedControlsScreen";
 import ThemeChangerScreen from "../screens/theme_changer/ThemeChangerScreen";
 import { NativeStackParams } from "./types/types";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../screens/home/HomeScreen";
-import CircularProgressBarScreen from "../screens/circular_progress_bar/CircularProgressBarScreen";
 
 const { Navigator, Screen } = createNativeStackNavigator<NativeStackParams>();
 const MainStack = () => {
@@ -54,6 +55,11 @@ const MainStack = () => {
         name="circular_progress_bar"
         options={{ title: "Circular Progress Bar" }}
         component={CircularProgressBarScreen}
+      />
+      <Screen
+        name="segmented_controls"
+        options={{ title: "Segmented Controls" }}
+        component={SegmentedControlsScreen}
       />
     </Navigator>
   );
