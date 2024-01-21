@@ -8,4 +8,5 @@ export type NativeStackParams = {
   home_screen: undefined;
   circular_progress_bar: undefined;
   segmented_controls: undefined;
+  onboarding: undefined;
 };

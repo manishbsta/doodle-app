@@ -43,6 +43,10 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
             label="Segmented Controls"
             onPress={() => navigation.navigate("segmented_controls")}
           />
+          <DashboardTile
+            label="Onboarding"
+            onPress={() => navigation.navigate("onboarding")}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

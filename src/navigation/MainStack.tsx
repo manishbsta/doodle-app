@@ -10,6 +10,7 @@ import ScrollingScreen from "../screens/scrolling_screen/ScrollingScreen";
 import SegmentedControlsScreen from "../screens/segmented_controls/SegmentedControlsScreen";
 import ThemeChangerScreen from "../screens/theme_changer/ThemeChangerScreen";
 import { NativeStackParams } from "./types/types";
+import OnboardingScreen from "../screens/onboarding/OnboardingScreen";
 
 const { Navigator, Screen } = createNativeStackNavigator<NativeStackParams>();
 const MainStack = () => {
@@ -60,6 +61,11 @@ const MainStack = () => {
         name="segmented_controls"
         options={{ title: "Segmented Controls" }}
         component={SegmentedControlsScreen}
+      />
+      <Screen
+        name="onboarding"
+        options={{ title: "Onboarding" }}
+        component={OnboardingScreen}
       />
     </Navigator>
   );
