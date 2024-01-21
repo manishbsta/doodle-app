@@ -26,7 +26,13 @@ const OnboardingScreen = () => {
   });
 
   const onIconPress = () => {
-    if (activeDotIndex.value === PAGES.length - 1) return;
+    if (activeDotIndex.value === PAGES.length - 1) {
+      scrollRef.current?.scrollTo({
+        x: 0,
+      });
+      return;
+    }
+
     scrollRef.current?.scrollTo({
       x: SCREEN_WIDTH * (activeDotIndex.value + 1),
     });
